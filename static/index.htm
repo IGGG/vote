@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>Vote</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vote.css">
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -14,10 +17,8 @@
 </head>
 <body>
   <div>
-    <form action="#">
-      <button id="up-button">+1</button>
-      <button id="down-button">-1</button>
-    </form>
+    <i class="fa fa-5x fa-thumbs-o-down" id="down-button"></i>
+    <i class="fa fa-5x fa-thumbs-o-up" id="up-button"></i>
   </div>
 </body>
 </html>
