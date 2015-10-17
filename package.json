@@ -1,0 +1,9 @@
+{
+  "name": "vote",
+  "version": "0.0.1",
+  "description": "vote webapp",
+  "author": "gion <gion_XY@live.jp",
+  "dependencies": {
+    "socket.io": "^1.3.7"
+  }
+}
