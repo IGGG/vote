@@ -21,7 +21,7 @@ $(function() {
     };
 
     var updateChart = function() {
-        $chart.update(createChartData());
+        chart.update(createChartData());
     };
 
 
