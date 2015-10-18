@@ -53,5 +53,6 @@ io_namespace.vote.on('connection', function(socket) {
 
 io_namespace.bulletin.on('connection', function(socket) {
     socket.emit('#user-changed', users.get());
-    socket.emit('voted', votes.get());
+    socket.emit('good', votes.get().n_good);
+    socket.emit('poor', votes.get().n_poor);
 });
