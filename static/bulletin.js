@@ -21,6 +21,9 @@ $(function() {
     };
 
     var updateChart = function() {
+        if (n_good === 0 && n_poor === 0) {
+            return;
+        }
         chart.update(createChartData());
     };
 
